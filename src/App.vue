@@ -1,32 +1,29 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div>
+    <div>
+      <b-navbar toggleable="sm" type="light" variant="light" sticky>
+        <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+
+        <b-navbar-brand to="/" style="margin-left:10px">BV Shop</b-navbar-brand>
+
+        <b-collapse id="nav-text-collapse" class="justify-content-md-center" is-nav>
+          <b-navbar-nav>
+            <b-nav-item to="/clothing" style="margin-right:10px;">Clothing</b-nav-item>
+            <b-nav-item to="/shoes" style="margin-right:10px;">Shoes</b-nav-item>
+            <b-nav-item to="/accessories">Accessories</b-nav-item>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+@import url("https://fonts.googleapis.com/css?family=Prompt");
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+html,
+body {
+  font-family: "Prompt", sans-serif !important;
 }
 </style>
