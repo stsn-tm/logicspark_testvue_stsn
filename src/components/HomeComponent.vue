@@ -54,7 +54,7 @@
         </b-row>
         <div style="margin-top:20px;">
           <b-row>
-            <b-col class="d-flex align-items-stretch" md="4" v-for="item in shoesData" :key="item._id">
+            <b-col class="align-items-stretch" md="4" v-for="item in shoesData" :key="item._id">
               <b-card
                 :title="item.title"
                 :img-src="item.img"
